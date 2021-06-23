@@ -10,17 +10,20 @@ Sobreloader permite abrir un programa una x cantidad de veces al mismo tiempo, d
 
 ### Requisitos:
 ...para ejecutar Sobreloader:
-* Windows XP RTM o superior
-* .NET Framework 2 o superior
+* Windows XP RTM o superior.
+* .NET Framework 2 o superior.
 
 ...para compilar:
-* Visual Studio 2010 o superior (por retrocompatibilidad se recomienda la más cercana a 2010)
+* Visual Studio 2010 o superior (por retrocompatibilidad se recomienda la más cercana a 2010).
 
 ### Estado preliminar
 Sobreloader se encuentra en fase beta. Esto implica que es probable encontrar bugs en tiempo de ejecución. De este modo, cualquier error que se reporte en el tracker será agradecido.
 
 **La ejecución masiva de programas supone un riesgo para el rendimiento del sistema. Como ya se ha mencionado, su utilización es ampliamente recomendada en máquinas virtuales o equipos en desuso.**
 
+
+## Licencia
+Sobreloader está alojado bajo la licencia [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
 
 ## Enlaces del desarrollador
 [YouTube](https://www.youtube.com/user/elstef41)
