@@ -1,0 +1,36 @@
+C:\Users\elstef41\documents\visual studio 2010\Projects\DSA\DSA\obj\x86\Debug\Sobreloader.Properties.Resources.resources
+C:\Users\elstef41\documents\visual studio 2010\Projects\DSA\DSA\obj\x86\Debug\Sobreloader.csproj.GenerateResource.Cache
+C:\Users\elstef41\documents\visual studio 2010\Projects\DSA\DSA\obj\x86\Debug\Sobreloader.exe
+C:\Users\elstef41\documents\visual studio 2010\Projects\DSA\DSA\bin\Debug\Sobreloader.exe
+C:\Users\elstef41\documents\visual studio 2010\Projects\DSA\DSA\bin\Debug\Sobreloader.pdb
+C:\Users\elstef41\documents\visual studio 2010\Projects\DSA\DSA\obj\x86\Debug\Sobreloader.pdb
+C:\Users\elstef41\documents\visual studio 2010\Projects\DSA\DSA\bin\Debug\Sobreloader.exe.config
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\DSA\DSA\obj\x86\Debug\Sobreloader.ejemplos.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\DSA\DSA\obj\x86\Debug\Sobreloader.csprojResolveAssemblyReference.cache
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\DSA\DSA\obj\x86\Debug\Sobreloader.AcercaDe.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\DSA\DSA\obj\x86\Debug\Sobreloader.sobreloader.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\bin\Debug\Sobreloader.exe.config
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\obj\x86\Debug\Sobreloader.exe
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\obj\x86\Debug\Sobreloader.pdb
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\bin\Debug\Sobreloader.exe
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\bin\Debug\Sobreloader.pdb
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\obj\x86\Debug\Sobreloader.csprojResolveAssemblyReference.cache
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\obj\x86\Debug\Sobreloader.AcercaDe.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\obj\x86\Debug\Sobreloader.ejemplos.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\obj\x86\Debug\Sobreloader.Properties.Resources.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\obj\x86\Debug\Sobreloader.sobreloader.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA\obj\x86\Debug\Sobreloader.csproj.GenerateResource.Cache
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\bin\Debug\Sobreloader.exe.config
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\obj\x86\Debug\Sobreloader.exe
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\obj\x86\Debug\Sobreloader.pdb
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\bin\Debug\Sobreloader.exe
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\bin\Debug\Sobreloader.pdb
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\obj\x86\Debug\Sobreloader.csprojResolveAssemblyReference.cache
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\obj\x86\Debug\Sobreloader.AcercaDe.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\obj\x86\Debug\Sobreloader.ejemplos.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\obj\x86\Debug\Sobreloader.Properties.Resources.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\obj\x86\Debug\Sobreloader.sobreloader.resources
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\DSA - copia\obj\x86\Debug\Sobreloader.csproj.GenerateResource.Cache
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\Sobreloader\bin\Debug\Sobreloader.exe.config
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\Sobreloader\obj\x86\Debug\Sobreloader.exe
+C:\Users\elstef41\Documents\Visual Studio 2010\Projects\Sobreloader\Sobreloader\obj\x86\Debug\Sobreloader.pdb
