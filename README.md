@@ -1,16 +1,16 @@
 # Sobreloader
 ## Una sencilla herramienta que permite abrir nuevas instancias de programas de forma masiva.
 
-Sobreloader permite abrir un programa una x cantidad de veces al mismo tiempo, de manera sencilla y práctica, dentro de una interfaz gráfica que brinda algunas opciones. Esto sirve de utilidad para sobrecargar una máquina y agotarle el rendimiento de manera experimental. Preferiblemente, se usa en entornos virtuales o aquellas máquinas que no poseen un uso diario en la actualidad.
+Sobreloader permite abrir un programa una x cantidad de veces al mismo tiempo, de manera sencilla y práctica, dentro de una interfaz gráfica que brinda algunas opciones. Esto sirve de utilidad para sobrecargar una máquina y agotarle el rendimiento de manera experimental. Preferiblemente, se usa en entornos virtuales o aquellas computadoras que no poseen un uso diario en la actualidad.
 
 ### Funciones principales:
 - Establecer argumentos de ejecución.
-- Listado con variables de ejecutables (estilo la ventana Ejecutar del menú inicio).
+- Listado con variables de ejecutables (estilo la ventana Ejecutar del menú inicio) [Experimental].
 - Elegir cantidad de veces a abrir un programa (hasta 999999).
 
 ### Requisitos:
 ...para ejecutar Sobreloader:
-* Windows XP RTM o superior.
+* Windows XP o superior.
 * .NET Framework 2 o superior.
 
 ...para compilar:
