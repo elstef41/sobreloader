@@ -48,27 +48,31 @@ namespace Sobreloader
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int sl = 1;
             if (textBox1.Text == "") {
                 MessageBox.Show("No has escrito un proceso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (numericUpDown1.Value < 1)
+            else if (checkBox2.Checked == false && numericUpDown1.Value < 1)
             {
                 MessageBox.Show("La cantidad debe ser superior a 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            else if (checkBox2.Checked == true)
             {
+                var sinlimconfirm = MessageBox.Show("Has seleccionado la opción Sin límite, lo que implica que el programa establecido se ejecutará de forma constante, sin finalización. Si no te encuentras en un entorno virtualizado, es muy probable que este procedimiento le ocasione daños al rendimiento de tu equipo dejando secuelas.\n\n\n¿Realmente estás seguro de continuar? Si no estás en una máquina virtual, elige No.", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    switch (sinlimconfirm)
+                    {
+                        case DialogResult.Yes:
+                            sl = 1;
+                            break;
+                        case DialogResult.No:
+                            sl = 0;
+                            break;
+                    }
+            } if (sl == 1) {
                 int eCant = Convert.ToInt32(numericUpDown1.Value);
                 int eAb = 0;
                 ProcessWindowStyle SelVent;
                 string args = argsTB.Text;
-                if (checkBox1.Checked == true)
-                {
-                    SelVent = ProcessWindowStyle.Maximized;
-                }
-                else
-                {
-                    SelVent = ProcessWindowStyle.Normal;
-                }
                 var procesos = Process.GetProcessesByName(textBox1.Text);
                 if (!checkBox1.Checked)
                 {
@@ -90,16 +94,11 @@ namespace Sobreloader
                     try
                     {
                         proceso.Start();
-                        eAb++;
+                        if (checkBox2.Checked == false) { eAb++; }
                     }
-                    catch (FileNotFoundException)
+                    catch (SystemException err)
                     {
-                        MessageBox.Show("No se ha encontrado el archivo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        eAb = eCant;
-                    }
-                    catch (SystemException)
-                    {
-                        MessageBox.Show("Ha occurido un error al abrir el archivo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Ha occurido un error al abrir el archivo.\n\nSi has escrito el nombre del ejecutable a secas, prueba a colocar su ubicación original.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         eAb = eCant;
                     }
                 }
@@ -247,6 +246,18 @@ namespace Sobreloader
         private void guardarEnArchivoDeLotesbatToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                numericUpDown1.Enabled = false;
+            }
+            else
+            {
+                numericUpDown1.Enabled = true;
+            }
         }
 
     }

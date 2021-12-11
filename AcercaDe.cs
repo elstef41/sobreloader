@@ -45,10 +45,5 @@ namespace Sobreloader
                 this.Close();
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.apache.org/licenses/LICENSE-2.0");
-        }
     }
 }
