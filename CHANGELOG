@@ -1,2 +1,6 @@
+0.8.5:
+- Agregada opción para ejecutar un proceso sin límite de veces.
+- Cambios estéticos menores.
+
 0.8.0:
 - Lanzamiento inicial
