@@ -33,11 +33,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.SobreloaderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombresDeEjemploToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restaurarTamañoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advertenciaDeInicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visitarRepositorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.licenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,16 +51,23 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.argsTB = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.oAdicionales = new System.Windows.Forms.GroupBox();
+            this.cancText = new System.Windows.Forms.PictureBox();
+            this.desText = new System.Windows.Forms.PictureBox();
+            this.ctst = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.oAdicionales.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cancText)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.desText)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ctst)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,6 +96,7 @@
             // 
             this.SobreloaderToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nombresDeEjemploToolStripMenuItem,
+            this.restaurarTamañoToolStripMenuItem,
             this.toolStripSeparator2,
             this.salirToolStripMenuItem});
             this.SobreloaderToolStripMenuItem.Name = "SobreloaderToolStripMenuItem";
@@ -99,6 +109,14 @@
             this.nombresDeEjemploToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
             this.nombresDeEjemploToolStripMenuItem.Text = "&Nombres de procesos de ejemplo";
             this.nombresDeEjemploToolStripMenuItem.Click += new System.EventHandler(this.nombresDeEjemploToolStripMenuItem_Click);
+            // 
+            // restaurarTamañoToolStripMenuItem
+            // 
+            this.restaurarTamañoToolStripMenuItem.Enabled = false;
+            this.restaurarTamañoToolStripMenuItem.Name = "restaurarTamañoToolStripMenuItem";
+            this.restaurarTamañoToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.restaurarTamañoToolStripMenuItem.Text = "&Restaurar tamaño";
+            this.restaurarTamañoToolStripMenuItem.Click += new System.EventHandler(this.restaurarTamañoToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -116,6 +134,7 @@
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.advertenciaDeInicioToolStripMenuItem,
             this.visitarRepositorioToolStripMenuItem,
+            this.licenciaToolStripMenuItem,
             this.toolStripSeparator1,
             this.acercaDeToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
@@ -136,6 +155,13 @@
             this.visitarRepositorioToolStripMenuItem.Text = "&Visitar repositorio";
             this.visitarRepositorioToolStripMenuItem.Click += new System.EventHandler(this.visitarRepositorioToolStripMenuItem_Click_1);
             // 
+            // licenciaToolStripMenuItem
+            // 
+            this.licenciaToolStripMenuItem.Name = "licenciaToolStripMenuItem";
+            this.licenciaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.licenciaToolStripMenuItem.Text = "&Licencia";
+            this.licenciaToolStripMenuItem.Click += new System.EventHandler(this.licenciaToolStripMenuItem_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -145,7 +171,7 @@
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.acercaDeToolStripMenuItem.Text = "&Acerca de...";
+            this.acercaDeToolStripMenuItem.Text = "A&cerca de...";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // label1
@@ -172,13 +198,15 @@
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(366, 100);
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label3.Location = new System.Drawing.Point(248, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Ej: mspaint";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox1
             // 
@@ -186,8 +214,9 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(15, 116);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(326, 20);
+            this.textBox1.Size = new System.Drawing.Size(329, 20);
             this.textBox1.TabIndex = 4;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // numericUpDown1
             // 
@@ -197,9 +226,19 @@
             0,
             0,
             0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown1.TabIndex = 5;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label4
@@ -222,10 +261,9 @@
             this.panel2.ForeColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(12, 227);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(412, 51);
+            this.panel2.Size = new System.Drawing.Size(412, 52);
             this.panel2.TabIndex = 7;
             this.panel2.Visible = false;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label5
             // 
@@ -240,8 +278,6 @@
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(12, 192);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 26);
@@ -249,24 +285,13 @@
             this.button1.Text = "E&jecutar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button1_KeyUp);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 286);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Opciones adicionales";
             // 
             // argsTB
             // 
             this.argsTB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.argsTB.Location = new System.Drawing.Point(13, 325);
+            this.argsTB.Location = new System.Drawing.Point(17, 59);
             this.argsTB.Name = "argsTB";
-            this.argsTB.Size = new System.Drawing.Size(409, 20);
+            this.argsTB.Size = new System.Drawing.Size(378, 20);
             this.argsTB.TabIndex = 12;
             this.argsTB.Visible = false;
             // 
@@ -274,17 +299,18 @@
             // 
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(15, 302);
+            this.checkBox1.Location = new System.Drawing.Point(17, 36);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(144, 17);
+            this.checkBox1.Size = new System.Drawing.Size(121, 17);
             this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "Ejecutar con argumentos";
+            this.checkBox1.Text = "A&gregar argumentos";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(347, 116);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(347, 114);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 13;
@@ -299,7 +325,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(69, 17);
             this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "Sin límite";
+            this.checkBox2.Text = "&Sin límite";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
@@ -314,35 +340,95 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "(PELIGROSO)";
             // 
+            // oAdicionales
+            // 
+            this.oAdicionales.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.oAdicionales.Controls.Add(this.argsTB);
+            this.oAdicionales.Controls.Add(this.checkBox1);
+            this.oAdicionales.Location = new System.Drawing.Point(12, 286);
+            this.oAdicionales.Name = "oAdicionales";
+            this.oAdicionales.Size = new System.Drawing.Size(412, 93);
+            this.oAdicionales.TabIndex = 16;
+            this.oAdicionales.TabStop = false;
+            this.oAdicionales.Text = "Opciones adicionales";
+            // 
+            // cancText
+            // 
+            this.cancText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancText.BackColor = System.Drawing.Color.White;
+            this.cancText.Image = ((System.Drawing.Image)(resources.GetObject("cancText.Image")));
+            this.cancText.Location = new System.Drawing.Point(326, 120);
+            this.cancText.Name = "cancText";
+            this.cancText.Size = new System.Drawing.Size(15, 13);
+            this.cancText.TabIndex = 17;
+            this.cancText.TabStop = false;
+            this.cancText.Visible = false;
+            this.cancText.Click += new System.EventHandler(this.cancText_Click);
+            // 
+            // desText
+            // 
+            this.desText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.desText.BackColor = System.Drawing.Color.White;
+            this.desText.Image = ((System.Drawing.Image)(resources.GetObject("desText.Image")));
+            this.desText.Location = new System.Drawing.Point(310, 119);
+            this.desText.Name = "desText";
+            this.desText.Size = new System.Drawing.Size(16, 13);
+            this.desText.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.desText.TabIndex = 18;
+            this.desText.TabStop = false;
+            this.desText.Visible = false;
+            this.desText.Click += new System.EventHandler(this.desText_Click_1);
+            // 
+            // ctst
+            // 
+            this.ctst.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ctst.BackColor = System.Drawing.Color.White;
+            this.ctst.Image = ((System.Drawing.Image)(resources.GetObject("ctst.Image")));
+            this.ctst.Location = new System.Drawing.Point(325, 120);
+            this.ctst.Name = "ctst";
+            this.ctst.Size = new System.Drawing.Size(13, 13);
+            this.ctst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ctst.TabIndex = 19;
+            this.ctst.TabStop = false;
+            // 
             // sobreloader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 357);
+            this.ClientSize = new System.Drawing.Size(434, 391);
+            this.Controls.Add(this.desText);
+            this.Controls.Add(this.cancText);
+            this.Controls.Add(this.oAdicionales);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.argsTB);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ctst);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "sobreloader";
             this.Text = "Sobreloader";
+            this.Load += new System.EventHandler(this.sobreloader_Load);
+            this.SizeChanged += new System.EventHandler(this.sobreloader_SizeChanged);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.sobreloader_KeyUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.oAdicionales.ResumeLayout(false);
+            this.oAdicionales.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cancText)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.desText)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ctst)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,7 +446,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox argsTB;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -376,5 +461,11 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem licenciaToolStripMenuItem;
+        private System.Windows.Forms.GroupBox oAdicionales;
+        private System.Windows.Forms.ToolStripMenuItem restaurarTamañoToolStripMenuItem;
+        private System.Windows.Forms.PictureBox cancText;
+        private System.Windows.Forms.PictureBox desText;
+        private System.Windows.Forms.PictureBox ctst;
     }
 }

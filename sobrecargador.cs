@@ -12,25 +12,24 @@ namespace Sobreloader
     public partial class sobreloader : Form
     {
         Strings SC = new Strings();
+        public string consejosFrases()
+        {
+            string[] ejemplos = {"mspaint", "notepad", "winver", "calc"};
+            var ejaltr = new Random();
+            int cntej = ejaltr.Next(ejemplos.Length);
+            return ejemplos[cntej];
+        }
         public sobreloader()
         {
             InitializeComponent();
-            this.MinimumSize = new Size(396, 249);
+            this.MinimumSize = new Size(430, 420);
             this.Text = "Sobreloader ";
             this.Text += SC.obtenerVersion();
             this.Text += " por elstef41";
+            label3.Text = "Ej: " + consejosFrases();
         }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        string ultexto;
+        bool ultextoUso = false;
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             if (numericUpDown1.Value >= 1000)
@@ -49,16 +48,19 @@ namespace Sobreloader
         private void button1_Click(object sender, EventArgs e)
         {
             int sl = 1;
-            if (textBox1.Text == "") {
-                MessageBox.Show("No has escrito un proceso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (checkBox2.Checked == false && numericUpDown1.Value < 1)
+            if (textBox1.Text == "")
             {
-                MessageBox.Show("La cantidad debe ser superior a 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No has escrito un proceso.\n\nEn el menú Sobreloader puedes ver algunos ejemplos con programas de fábrica.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (checkBox2.Checked == true)
+            else
             {
-                var sinlimconfirm = MessageBox.Show("Has seleccionado la opción Sin límite, lo que implica que el programa establecido se ejecutará de forma constante, sin finalización. Si no te encuentras en un entorno virtualizado, es muy probable que este procedimiento le ocasione daños al rendimiento de tu equipo dejando secuelas.\n\n\n¿Realmente estás seguro de continuar? Si no estás en una máquina virtual, elige No.", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (checkBox2.Checked == false && numericUpDown1.Value < 1)
+                {
+                    MessageBox.Show("La cantidad debe ser superior a 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (checkBox2.Checked == true)
+                {
+                    var sinlimconfirm = MessageBox.Show("Has seleccionado la opción Sin límite, lo que implica que el programa establecido se ejecutará de forma constante, sin finalización. Si no te encuentras en un entorno virtualizado, es muy probable que este procedimiento le ocasione daños al rendimiento de tu equipo dejando secuelas.\n\n\n¿Realmente estás seguro de continuar? Si no estás en una máquina virtual, elige No.", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                     switch (sinlimconfirm)
                     {
                         case DialogResult.Yes:
@@ -68,38 +70,44 @@ namespace Sobreloader
                             sl = 0;
                             break;
                     }
-            } if (sl == 1) {
-                int eCant = Convert.ToInt32(numericUpDown1.Value);
-                int eAb = 0;
-                ProcessWindowStyle SelVent;
-                string args = argsTB.Text;
-                var procesos = Process.GetProcessesByName(textBox1.Text);
-                if (!checkBox1.Checked)
+                } if (sl == 1)
                 {
-                    args = "";
-                }
-                while (eAb < eCant)
-                {
-                    var proceso = new Process
+                    int eCant = Convert.ToInt32(numericUpDown1.Value);
+                    int eAb = 0;
+                    ProcessWindowStyle SelVent;
+                    string args = argsTB.Text;
+                    ProcessWindowStyle wst = ProcessWindowStyle.Normal;
+                    var procesos = Process.GetProcessesByName(textBox1.Text);
+                    if (!checkBox1.Checked)
                     {
-                        StartInfo = new ProcessStartInfo
-                        {
-                            FileName = textBox1.Text,
-                            UseShellExecute = false,
-                            RedirectStandardOutput = true,
-                            CreateNoWindow = true,
-                            Arguments = args
-                        }
-                    };
-                    try
-                    {
-                        proceso.Start();
-                        if (checkBox2.Checked == false) { eAb++; }
+                        args = "";
                     }
-                    catch (SystemException err)
+                    ultexto = textBox1.Text;
+                    ultextoUso = true;
+                    desText.Visible = false;
+                    while (eAb < eCant)
                     {
-                        MessageBox.Show("Ha occurido un error al abrir el archivo.\n\nSi has escrito el nombre del ejecutable a secas, prueba a colocar su ubicación original.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        eAb = eCant;
+                        var proceso = new Process
+                        {
+                            StartInfo = new ProcessStartInfo
+                            {
+                                FileName = textBox1.Text,
+                                WindowStyle = wst,
+                                RedirectStandardOutput = false,
+                                CreateNoWindow = true,
+                                Arguments = args
+                            }
+                        };
+                        try
+                        {
+                            proceso.Start();
+                            if (checkBox2.Checked == false) { eAb++; }
+                        }
+                        catch (SystemException err)
+                        {
+                            MessageBox.Show("Ha ocurrido un error al abrir el archivo.\n\nSi has escrito el nombre del ejecutable a secas, prueba a colocar su ubicación original.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            eAb = eCant;
+                        }
                     }
                 }
             }
@@ -129,10 +137,6 @@ namespace Sobreloader
             System.Diagnostics.Process.Start("https://twitter.com/elstef41");
         }
 
-        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AcercaDe().ShowDialog();
@@ -153,65 +157,6 @@ namespace Sobreloader
         private void visitarRepositorioToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/elstef41/sobreloader");
-        }
-
-        private void button1_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                if (textBox1.Text == "")
-                {
-                    MessageBox.Show("No has escrito un proceso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (numericUpDown1.Value < 1)
-                {
-                    MessageBox.Show("La cantidad debe ser superior a 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    int eCant = Convert.ToInt32(numericUpDown1.Value);
-                    int eAb = 0;
-                    ProcessWindowStyle SelVent;
-                    string args = argsTB.Text;
-                    if (checkBox1.Checked == true)
-                    {
-                        SelVent = ProcessWindowStyle.Maximized;
-                    }
-                    else
-                    {
-                        SelVent = ProcessWindowStyle.Normal;
-                    }
-                    var procesos = Process.GetProcessesByName(textBox1.Text);
-                    if (!checkBox1.Checked)
-                    {
-                        args = "";
-                    }
-                    while (eAb < eCant)
-                    {
-                        var proceso = new Process
-                        {
-                            StartInfo = new ProcessStartInfo
-                            {
-                                FileName = textBox1.Text,
-                                UseShellExecute = false,
-                                RedirectStandardOutput = true,
-                                CreateNoWindow = true,
-                                Arguments = args
-                            }
-                        };
-                        try
-                        {
-                            proceso.Start();
-                            eAb++;
-                        }
-                        catch
-                        {
-                            MessageBox.Show("El archivo especificado no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            eAb = eCant;
-                        }
-                    }
-                }
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -243,11 +188,6 @@ namespace Sobreloader
             }
         }
 
-        private void guardarEnArchivoDeLotesbatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox2.Checked)
@@ -259,6 +199,97 @@ namespace Sobreloader
                 numericUpDown1.Enabled = true;
             }
         }
+
+        private void licenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.apache.org/licenses/LICENSE-2.0.html");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+            {
+                label3.Visible = false;
+                cancText.Visible = true;
+                if (ultextoUso)
+                {
+                    desText.Visible = true;
+                }
+                else
+                {
+                    desText.Visible = false;
+                }
+            }
+            else
+            {
+                if (!cancText.Visible)
+                {
+                    label3.Visible = true;
+                }
+                cancText.Visible = false;
+            }
+            if (ultextoUso == true && ultexto == textBox1.Text)
+            {
+                desText.Visible = false;
+            }
+        }
+
+        private void restaurarTamañoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(450, 430);
+            restaurarTamañoToolStripMenuItem.Enabled = false;
+        }
+
+        private void sobreloader_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                restaurarTamañoToolStripMenuItem.Enabled = false;
+
+            } else if (this.Size.Width != 450 || this.Size.Height != 430)
+            {
+                restaurarTamañoToolStripMenuItem.Enabled = true;
+            }
+            else
+            {
+                restaurarTamañoToolStripMenuItem.Enabled = false;
+            }
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancText_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            if (ultextoUso)
+            {
+                desText.Visible = true;
+            }
+        }
+
+        private void desText_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = ultexto;
+        }
+
+        private void sobreloader_KeyUp(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+
+            }
+        }
+
+        private void sobreloader_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
 
     }
 }

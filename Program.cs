@@ -16,7 +16,12 @@ namespace Sobreloader
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Strings SC = new Strings();
-            SC.mensajeInicio();
+            if (Properties.Settings.Default.IsFirstLaunch)
+            {
+                Properties.Settings.Default.IsFirstLaunch = false;
+                Properties.Settings.Default.Save();
+                SC.mensajeInicio();
+            }
             Application.Run(new sobreloader());
         }
     }
