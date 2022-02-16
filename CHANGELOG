@@ -1,3 +1,11 @@
+0.9.0:
+- Ventana de procesos de ejemplo renovada; Ahora mostrará información sobre el que se haya seleccionado, y se podrá probarlo desde ahí.
+- Posibilidad de cambiar el tamaño de la ventana, maximizarla y restaurarla a sus dimensiones originales.
+- Cuadro de texto de procesos mejorado: botonera interactiva para deshacer y limpiar el texto.
+- Otros cambios genéricos en el diseño.
+- La advertencia de inicio aparecerá solo en la primera ejecución.
+
+
 0.8.5:
 - Agregada opción para ejecutar un proceso sin límite de veces.
 - Cambios estéticos menores.
