@@ -5,7 +5,6 @@
 - Otros cambios genéricos en el diseño.
 - La advertencia de inicio aparecerá solo en la primera ejecución.
 
-
 0.8.5:
 - Agregada opción para ejecutar un proceso sin límite de veces.
 - Cambios estéticos menores.
