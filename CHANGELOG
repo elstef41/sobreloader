@@ -1,3 +1,11 @@
+0.9.5:
+- Disponible en inglés; el idioma se aplicará automáticamente dependiendo del que tenga el sistema operativo.
+- Se agrega un historial de procesos que han sido ejecutados anteriormente, junto con su cantidad correspondiente.
+- Se reorganizaron los menús: el de Sobreloader pasa a ser Proceso, y se agrega el de Ventana, con la opción de restaurar tamaño.
+- Nuevas combinaciones de teclas: Ctrl+H (Ventana de ejemplos) y Ctrl+E (nuevo historial).
+- Posibilidad de mantener la ventana siempre visible.
+- Eliminado ejemplo del administrador de tareas, al no poder abrirse más de una vez al mismo tiempo.
+
 0.9.0:
 - Ventana de procesos de ejemplo renovada; Ahora mostrará información sobre el que se haya seleccionado, y se podrá probarlo desde ahí.
 - Posibilidad de cambiar el tamaño de la ventana, maximizarla y restaurarla a sus dimensiones originales.
