@@ -117,4 +117,346 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 48</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Algunos nombres para ejecutar programas:
+(haz clic sobre un item para ver más información)</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="listBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="listBox1.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox1.Items" xml:space="preserve">
+    <value>mspaint</value>
+  </data>
+  <data name="listBox1.Items1" xml:space="preserve">
+    <value>notepad</value>
+  </data>
+  <data name="listBox1.Items2" xml:space="preserve">
+    <value>wordpad</value>
+  </data>
+  <data name="listBox1.Items3" xml:space="preserve">
+    <value>iexplore</value>
+  </data>
+  <data name="listBox1.Items4" xml:space="preserve">
+    <value>explorer</value>
+  </data>
+  <data name="listBox1.Items5" xml:space="preserve">
+    <value>charmap</value>
+  </data>
+  <data name="listBox1.Items6" xml:space="preserve">
+    <value>control</value>
+  </data>
+  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 59</value>
+  </data>
+  <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 116</value>
+  </data>
+  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
+    <value>listBox1</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelNom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelNom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
+  </data>
+  <data name="labelNom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 14</value>
+  </data>
+  <data name="labelNom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 25</value>
+  </data>
+  <data name="labelNom.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelNom.Text" xml:space="preserve">
+    <value>nombre</value>
+  </data>
+  <data name="&gt;&gt;labelNom.Name" xml:space="preserve">
+    <value>labelNom</value>
+  </data>
+  <data name="&gt;&gt;labelNom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelNom.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelNom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 38</value>
+  </data>
+  <data name="labelDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 87</value>
+  </data>
+  <data name="labelDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelDesc.Text" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;labelDesc.Name" xml:space="preserve">
+    <value>labelDesc</value>
+  </data>
+  <data name="&gt;&gt;labelDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelDesc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelDesc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>461, 155</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>&amp;Copiar</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 133</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>&amp;Probar</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelWW.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelWW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 170</value>
+  </data>
+  <data name="labelWW.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="labelWW.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelWW.Text" xml:space="preserve">
+    <value>varios sistemas</value>
+  </data>
+  <data name="&gt;&gt;labelWW.Name" xml:space="preserve">
+    <value>labelWW</value>
+  </data>
+  <data name="&gt;&gt;labelWW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelWW.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelWW.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelw.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelw.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 170</value>
+  </data>
+  <data name="labelw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="labelw.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelw.Text" xml:space="preserve">
+    <value>Funciona en:</value>
+  </data>
+  <data name="&gt;&gt;labelw.Name" xml:space="preserve">
+    <value>labelw</value>
+  </data>
+  <data name="&gt;&gt;labelw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelw.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelw.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, -5</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 199</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>548, 190</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ejemplos</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ejemplos</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="1D" xml:space="preserve">
+    <value>El clásico editor de imágenes preinstalado en Windows.</value>
+  </data>
+  <data name="1T" xml:space="preserve">
+    <value>Paint</value>
+  </data>
+  <data name="1W" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="2D" xml:space="preserve">
+    <value>Editor de texto sin formato simple y sencillo.</value>
+  </data>
+  <data name="2T" xml:space="preserve">
+    <value>Bloc de notas</value>
+  </data>
+  <data name="2W" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="3D" xml:space="preserve">
+    <value>Editor de texto en formato enriquecido, muy básico en comparación con Word pero más completo que el Bloc de Notas. ¿Qué más se puede pedir?</value>
+  </data>
+  <data name="3T" xml:space="preserve">
+    <value>WordPad</value>
+  </data>
+  <data name="3W" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="4D" xml:space="preserve">
+    <value>De los navegadores de Internet que pasaron a la historia. En su momento llegó a ser el más utilizado, superando a Netscape. Hoy en día te permite descargar otros como el.</value>
+  </data>
+  <data name="4T" xml:space="preserve">
+    <value>Internet Explorer</value>
+  </data>
+  <data name="4W" xml:space="preserve">
+    <value>Hasta Windows 10</value>
+  </data>
+  <data name="5D" xml:space="preserve">
+    <value>La herramienta más usada de Microsoft Windows.</value>
+  </data>
+  <data name="5T" xml:space="preserve">
+    <value>Explorador de archivos</value>
+  </data>
+  <data name="5W" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="6D" xml:space="preserve">
+    <value>Si necesitas buscar e insertar símbolos extraños, o si vas a mandar un correo y tu bendito teclado no te permite insertar la arroba, esta utilidad preinstalada te sirve de maravilla.</value>
+  </data>
+  <data name="6T" xml:space="preserve">
+    <value>Mapa de carácteres</value>
+  </data>
+  <data name="6W" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="7D" xml:space="preserve">
+    <value>El centro de las principales configuraciones del sistema operativo de Microsoft. Presente desde siempre.</value>
+  </data>
+  <data name="7T" xml:space="preserve">
+    <value>Panel de control</value>
+  </data>
+  <data name="7W" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="8D" xml:space="preserve">
+    <value />
+  </data>
+  <data name="8T" xml:space="preserve">
+    <value>Programa desconocido</value>
+  </data>
+  <data name="8W" xml:space="preserve">
+    <value>??</value>
+  </data>
 </root>
