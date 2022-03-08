@@ -6,11 +6,13 @@ using System.Drawing;
 using System.Text;
 using System.Diagnostics;
 using System.Windows.Forms;
+using System.Resources;
 
 namespace Sobreloader
 {
     public partial class ejemplos : Form
     {
+        ResourceManager rm = new ResourceManager(typeof(ejemplos));
         public ejemplos()
         {
             InitializeComponent();
@@ -35,49 +37,44 @@ namespace Sobreloader
             switch (listBox1.SelectedIndex)
             {
                 case 0:
-                    labelNom.Text = "Paint";
-                    labelDesc.Text = "El clásico editor de imágenes preinstalado en Windows.";
-                    labelWW.Text = "Todos";
+                    labelNom.Text = string.Format(rm.GetString("1T"));
+                    labelDesc.Text = string.Format(rm.GetString("1D"));
+                    labelWW.Text = string.Format(rm.GetString("1W"));
                     break;
                 case 1:
-                    labelNom.Text = "Bloc de notas";
-                    labelDesc.Text = "Editor de texto sin formato simple y sencillo.";
-                    labelWW.Text = "Todos";
+                    labelNom.Text = string.Format(rm.GetString("2T"));
+                    labelDesc.Text = string.Format(rm.GetString("2D"));
+                    labelWW.Text = string.Format(rm.GetString("2W"));
                     break;
                 case 2:
-                    labelNom.Text = "WordPad";
-                    labelDesc.Text = "Editor de texto en formato enriquecido, muy básico en comparación con Word pero más completo que el Bloc de Notas. ¿Qué más se puede pedir?";
-                    labelWW.Text = "Todos";
+                    labelNom.Text = string.Format(rm.GetString("3T"));
+                    labelDesc.Text = string.Format(rm.GetString("3D"));
+                    labelWW.Text = string.Format(rm.GetString("3W"));
                     break;
                 case 3:
-                    labelNom.Text = "Internet Explorer";
-                    labelDesc.Text = "De los navegadores de Internet que pasaron a la historia. En su momento llegó a ser el más utilizado, superando a Netscape. Hoy en día te permite descargar otros como el.";
-                    labelWW.Text = "Hasta Windows 10";
+                    labelNom.Text = string.Format(rm.GetString("4T"));
+                    labelDesc.Text = string.Format(rm.GetString("4D"));
+                    labelWW.Text = string.Format(rm.GetString("4W"));
                     break;
                 case 4:
-                    labelNom.Text = "Explorador de archivos";
-                    labelDesc.Text = "La herramienta más usada de Microsoft Windows.";
-                    labelWW.Text = "Todos";
+                    labelNom.Text = string.Format(rm.GetString("5T"));
+                    labelDesc.Text = string.Format(rm.GetString("5D"));
+                    labelWW.Text = string.Format(rm.GetString("5W"));
                     break;
                 case 5:
-                    labelNom.Text = "Mapa de carácteres";
-                    labelDesc.Text = "Si necesitas buscar e insertar símbolos extraños, o si vas a mandar un correo y tu bendito teclado no te permite insertar la arroba, esta utilidad preinstalada te sirve de maravilla.";
-                    labelWW.Text = "Todos";
+                    labelNom.Text = string.Format(rm.GetString("6T"));
+                    labelDesc.Text = string.Format(rm.GetString("6D"));
+                    labelWW.Text = string.Format(rm.GetString("6W"));
                     break;
                 case 6:
-                    labelNom.Text = "Administrador de tareas";
-                    labelDesc.Text = "Este invento de David Plummer funciona para cerrar aquellas aplicaciones molestas que se nos cuelgan, ¡Vaya!";
-                    labelWW.Text = "Todos";
-                    break;
-                case 7:
-                    labelNom.Text = "Panel de control";
-                    labelDesc.Text = "El centro de las principales configuraciones del sistema operativo de Microsoft. Presente desde siempre.";
-                    labelWW.Text = "Todos";
+                    labelNom.Text = string.Format(rm.GetString("7T"));
+                    labelDesc.Text = string.Format(rm.GetString("7D"));
+                    labelWW.Text = string.Format(rm.GetString("7W"));
                     break;
                 default:
-                    labelNom.Text = "Programa desconocido";
-                    labelDesc.Text = "";
-                    labelWW.Text = "??";
+                    labelNom.Text = string.Format(rm.GetString("8T"));
+                    labelDesc.Text = string.Format(rm.GetString("8D"));
+                    labelWW.Text = string.Format(rm.GetString("8W"));
                     break;
 
             }
