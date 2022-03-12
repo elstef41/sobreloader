@@ -1,5 +1,6 @@
 # Sobreloader
 [![Lanzamiento actual](https://img.shields.io/github/v/release/elstef41/sobreloader?include_prereleases)](https://github.com/elstef41/sobreclick/releases)
+[![Sourceforge](https://img.shields.io/badge/sourceforge-descargar-green)](https://sourceforge.net/projects/sobreloader/files/latest/download)
 
 ![Ventana principal](https://user-images.githubusercontent.com/19848495/157554514-5002ca37-5640-4598-abec-b094943a05fc.png)
 
