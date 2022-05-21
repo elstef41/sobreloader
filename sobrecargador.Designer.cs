@@ -41,6 +41,7 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.oAdicionales = new System.Windows.Forms.GroupBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.cancText = new System.Windows.Forms.PictureBox();
             this.desText = new System.Windows.Forms.PictureBox();
             this.ctst = new System.Windows.Forms.PictureBox();
@@ -154,10 +155,17 @@
             // oAdicionales
             // 
             resources.ApplyResources(this.oAdicionales, "oAdicionales");
+            this.oAdicionales.Controls.Add(this.checkBox3);
             this.oAdicionales.Controls.Add(this.argsTB);
             this.oAdicionales.Controls.Add(this.checkBox1);
             this.oAdicionales.Name = "oAdicionales";
             this.oAdicionales.TabStop = false;
+            // 
+            // checkBox3
+            // 
+            resources.ApplyResources(this.checkBox3, "checkBox3");
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // cancText
             // 
@@ -360,5 +368,6 @@
         private System.Windows.Forms.ToolStripMenuItem licenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBox3;
     }
 }

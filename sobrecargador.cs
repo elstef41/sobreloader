@@ -34,14 +34,7 @@ namespace Sobreloader
         }
         string ultexto;
         bool ultextoUso = false;
-
-        public bool cT1() 
-        {
-            button1.FlatStyle = FlatStyle.Flat;
-            button2.FlatStyle = FlatStyle.Flat;
-            return true;
-        }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             int sl = 1;
@@ -67,54 +60,60 @@ namespace Sobreloader
                             sl = 0;
                             break;
                     }
-                } if (sl == 1)
-                {
-                    int eCant = Convert.ToInt32(numericUpDown1.Value);
-                    int eAb = 0;
-                    ProcessWindowStyle SelVent;
-                    string args = argsTB.Text;
-                    ProcessWindowStyle wst = ProcessWindowStyle.Normal;
-                    var procesos = Process.GetProcessesByName(textBox1.Text);
-                    if (!checkBox1.Checked)
+                } else {
+                    if (sl == 1)
                     {
-                        args = "";
-                    }
-                    ultexto = textBox1.Text;
-                    ultextoUso = true;
-                    desText.Visible = false;
-                    string prgsText;
-                    switch (checkBox2.Checked)
-                    {
-                        case true: 
-                            prgsText = textBox1.Text + rm.GetString("nlt");
-                            break;
-                        default:
-                            prgsText = textBox1.Text + " - " + eCant;
-                            break;
-                    }
-                    prgsList.Add(prgsText);
-                    while (eAb < eCant)
-                    {
-                        var proceso = new Process
+                        int eCant = Convert.ToInt32(numericUpDown1.Value);
+                        int eAb = 0;
+                        ProcessWindowStyle SelVent;
+                        string args = argsTB.Text;
+                        ProcessWindowStyle wst = ProcessWindowStyle.Normal;
+                        var procesos = Process.GetProcessesByName(textBox1.Text);
+                        if (!checkBox1.Checked)
                         {
-                            StartInfo = new ProcessStartInfo
-                            {
-                                FileName = textBox1.Text,
-                                WindowStyle = wst,
-                                RedirectStandardOutput = false,
-                                CreateNoWindow = true,
-                                Arguments = args
-                            }
-                        };
-                        try
-                        {
-                            proceso.Start();
-                            if (checkBox2.Checked == false) { eAb++; }
+                            args = "";
                         }
-                        catch (SystemException err)
+                        ultexto = textBox1.Text;
+                        ultextoUso = true;
+                        desText.Visible = false;
+                        string prgsText;
+                        switch (checkBox2.Checked)
                         {
-                            MessageBox.Show(string.Format(rm.GetString("msgErrorOF")), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            eAb = eCant;
+                            case true:
+                                prgsText = textBox1.Text + rm.GetString("nlt");
+                                break;
+                            default:
+                                prgsText = textBox1.Text + " - " + eCant;
+                                break;
+                        }
+                        prgsList.Add(prgsText);
+                        while (eAb < eCant)
+                        {
+                            var proceso = new Process
+                            {
+                                StartInfo = new ProcessStartInfo
+                                {
+                                    FileName = textBox1.Text,
+                                    WindowStyle = wst,
+                                    RedirectStandardOutput = false,
+                                    CreateNoWindow = true,
+                                    Arguments = args
+                                }
+                            };
+                            try
+                            {
+                                proceso.Start();
+                                if (checkBox2.Checked == false) { eAb++; }
+                            }
+                            catch (SystemException err)
+                            {
+                                MessageBox.Show(string.Format(rm.GetString("msgErrorOF")), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                eAb = eCant;
+                            }
+                        }
+                        if (checkBox3.Checked)
+                        {
+                            this.Close();
                         }
                     }
                 }
@@ -195,7 +194,6 @@ namespace Sobreloader
                 }
             }
         }
-
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox2.Checked)
@@ -207,12 +205,10 @@ namespace Sobreloader
                 numericUpDown1.Enabled = true;
             }
         }
-
         private void licenciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.apache.org/licenses/LICENSE-2.0.html");
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (textBox1.Text != "")
@@ -241,11 +237,6 @@ namespace Sobreloader
                 desText.Visible = false;
             }
         }
-
-        private void restaurarTamañoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
         private void sobreloader_SizeChanged(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Maximized)
@@ -262,12 +253,6 @@ namespace Sobreloader
                 restaurarVentanaToolStripMenuItem.Enabled = false;
             }
         }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void cancText_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
@@ -312,14 +297,6 @@ namespace Sobreloader
                 this.TopMost = false;
                 siempreVisibleToolStripMenuItem.Checked = false;
             }
-        }
-        private void sólidoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void flatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            cT1();
         }
     }
 }

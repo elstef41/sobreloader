@@ -157,6 +157,12 @@
   <data name="label7.Text" xml:space="preserve">
     <value>(DANGEROUS)</value>
   </data>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 17</value>
+  </data>
+  <data name="checkBox3.Text" xml:space="preserve">
+    <value>&amp;Close when finished</value>
+  </data>
   <data name="oAdicionales.Text" xml:space="preserve">
     <value>Additional settings</value>
   </data>

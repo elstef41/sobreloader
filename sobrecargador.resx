@@ -286,7 +286,7 @@
     <value>Left, Right</value>
   </data>
   <data name="argsTB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 38</value>
+    <value>16, 61</value>
   </data>
   <data name="argsTB.Size" type="System.Drawing.Size, System.Drawing">
     <value>378, 20</value>
@@ -307,7 +307,7 @@
     <value>oAdicionales</value>
   </data>
   <data name="&gt;&gt;argsTB.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="checkBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -316,7 +316,7 @@
     <value>True</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 21</value>
+    <value>16, 43</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 17</value>
@@ -337,7 +337,7 @@
     <value>oAdicionales</value>
   </data>
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -426,11 +426,44 @@
   <data name="oAdicionales.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
   </data>
+  <data name="checkBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 22</value>
+  </data>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 17</value>
+  </data>
+  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="checkBox3.Text" xml:space="preserve">
+    <value>&amp;Cerrar al terminar</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>oAdicionales</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="oAdicionales.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 257</value>
   </data>
   <data name="oAdicionales.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 64</value>
+    <value>412, 93</value>
   </data>
   <data name="oAdicionales.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -718,9 +751,9 @@
   <data name="&gt;&gt;ctst.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </data>
+  </metadata>
   <data name="nombresDeEjemploToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+E</value>
   </data>
@@ -856,9 +889,9 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
