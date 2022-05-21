@@ -1,3 +1,7 @@
+0.9.6:
+- Opción para cerrar Sobreloader al terminar de abrir los procesos.
+- Actualizado enlace de blog.
+
 0.9.5:
 - Disponible en inglés; el idioma se aplicará automáticamente dependiendo del que tenga el sistema operativo.
 - Se agrega un historial de procesos que han sido ejecutados anteriormente, junto con su cantidad correspondiente.
