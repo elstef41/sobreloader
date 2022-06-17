@@ -11,9 +11,10 @@ Sobreloader permite abrir un programa una x cantidad de veces al mismo tiempo, d
 
 ### Funciones principales:
 - Establecer argumentos de ejecución.
-- Listado con variables de ejecutables (estilo la ventana Ejecutar del menú inicio) [Experimental].
+- Listado con variables de ejecutables (estilo la ventana Ejecutar del menú inicio).
 - Elegir cantidad de veces a abrir un programa (hasta 999999) o apertura constante.
 - Ver un historial de ejecuciones con su cantidad.
+- Seleccionar el estado de las ventanas: maximizada, minimizada, oculta o normal.
 
 ### Requisitos:
 ...para ejecutar Sobreloader:
