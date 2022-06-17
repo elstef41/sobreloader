@@ -1,10 +1,9 @@
 # Sobreloader
-
-
 [![Lanzamiento actual](https://img.shields.io/github/v/release/elstef41/sobreloader?include_prereleases)](https://github.com/elstef41/sobreloader/releases)
 [![Sourceforge](https://img.shields.io/badge/sourceforge-descargar-green)](https://sourceforge.net/projects/sobreloader/files/latest/download)
 
-![Ventana principal](https://user-images.githubusercontent.com/19848495/169626855-e46dcbee-b4eb-4bef-8f54-29cf7082da43.png)
+![Sobreloader 1.0](https://user-images.githubusercontent.com/19848495/174358309-c7ac1870-5803-4c7c-ac25-ac68981c6aa2.png)
+
 
 ## Una sencilla herramienta que permite abrir nuevas instancias de programas de forma masiva.
 
@@ -24,11 +23,8 @@ Sobreloader permite abrir un programa una x cantidad de veces al mismo tiempo, d
 ...para compilar:
 * Visual Studio 2010 o superior (por retrocompatibilidad se recomienda la más cercana a 2010).
 
-### Estado preliminar
-Sobreloader se encuentra en fase beta. Esto implica que es probable encontrar bugs en tiempo de ejecución. De este modo, cualquier error que se reporte en el tracker será agradecido.
 
 **La ejecución masiva de programas supone un riesgo para el rendimiento del sistema. Como ya se ha mencionado, su utilización es ampliamente recomendada en máquinas virtuales o equipos en desuso.**
-
 
 ## Licencia
 Sobreloader está alojado bajo la licencia [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
