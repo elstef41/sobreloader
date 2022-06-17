@@ -43,8 +43,8 @@
             // 
             // listBox1
             // 
-            resources.ApplyResources(this.listBox1, "listBox1");
             this.listBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.listBox1, "listBox1");
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -64,8 +64,8 @@
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
             // historial

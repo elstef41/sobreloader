@@ -15,6 +15,8 @@ namespace Sobreloader
     {
         Strings SC = new Strings();
         ResourceManager rm = new ResourceManager(typeof(sobreloader));
+        public List<String> prgsList = new List<String>();
+
         public string consejosFrases()
         {
             string[] ejemplos = {"mspaint", "notepad", "winver", "calc"};
@@ -22,15 +24,17 @@ namespace Sobreloader
             int cntej = ejaltr.Next(ejemplos.Length);
             return ejemplos[cntej];
         }
-        public List<String> prgsList = new List<String>();
+
+
         public sobreloader()
         {
             InitializeComponent();
-            this.MinimumSize = new Size(430, 420);
+            this.MinimumSize = new Size(430, 350);
             this.Text = "Sobreloader ";
             this.Text += SC.obtenerVersion();
             this.Text += rm.GetString("nby");
             label3.Text = rm.GetString("nex") + consejosFrases();
+            restaurarVentanaToolStripMenuItem.Enabled = false;
         }
         string ultexto;
         bool ultextoUso = false;
@@ -47,27 +51,38 @@ namespace Sobreloader
                 if (checkBox2.Checked == false && numericUpDown1.Value < 1)
                 {
                     MessageBox.Show(string.Format(rm.GetString("msgAmount1")), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (checkBox2.Checked == true)
-                {
-                    var sinlimconfirm = MessageBox.Show(string.Format(rm.GetString("msgNoLimit")), "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-                    switch (sinlimconfirm)
-                    {
-                        case DialogResult.Yes:
-                            sl = 1;
-                            break;
-                        case DialogResult.No:
-                            sl = 0;
-                            break;
-                    }
                 } else {
+                    if (checkBox2.Checked == true)
+                    {
+                        var sinlimconfirm = MessageBox.Show(string.Format(rm.GetString("msgNoLimit")), rm.GetString("msgWarn"), MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                        switch (sinlimconfirm)
+                        {
+                            case DialogResult.Yes:
+                                sl = 1;
+                                break;
+                            case DialogResult.No:
+                                sl = 0;
+                                break;
+                        }
+                    }
                     if (sl == 1)
                     {
                         int eCant = Convert.ToInt32(numericUpDown1.Value);
                         int eAb = 0;
-                        ProcessWindowStyle SelVent;
                         string args = argsTB.Text;
                         ProcessWindowStyle wst = ProcessWindowStyle.Normal;
+                        if (radioButton2.Checked)
+                        {
+                            wst = ProcessWindowStyle.Minimized;
+                        }
+                        else if (radioButton3.Checked)
+                        {
+                            wst = ProcessWindowStyle.Maximized;
+                        }
+                        else if (radioButton4.Checked)
+                        {
+                            wst = ProcessWindowStyle.Hidden;
+                        }
                         var procesos = Process.GetProcessesByName(textBox1.Text);
                         if (!checkBox1.Checked)
                         {
@@ -97,6 +112,7 @@ namespace Sobreloader
                                     WindowStyle = wst,
                                     RedirectStandardOutput = false,
                                     CreateNoWindow = true,
+                                    UseShellExecute = true,
                                     Arguments = args
                                 }
                             };
@@ -107,7 +123,14 @@ namespace Sobreloader
                             }
                             catch (SystemException err)
                             {
-                                MessageBox.Show(string.Format(rm.GetString("msgErrorOF")), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                if (SC.debug)
+                                {
+                                    MessageBox.Show(string.Format(rm.GetString("msgErrorOF")) + "\n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                                else
+                                {
+                                    MessageBox.Show(string.Format(rm.GetString("msgErrorOF")), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
                                 eAb = eCant;
                             }
                         }
@@ -149,12 +172,10 @@ namespace Sobreloader
             new AcercaDe().ShowDialog();
         }
 
-
         private void advertenciaDeInicioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SC.mensajeInicio();
         }
-
 
         private void nombresDeEjemploToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -194,21 +215,26 @@ namespace Sobreloader
                 }
             }
         }
+
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox2.Checked)
             {
                 numericUpDown1.Enabled = false;
+                checkBox3.Enabled = false;
             }
             else
             {
                 numericUpDown1.Enabled = true;
+                checkBox3.Enabled = true;
             }
         }
+
         private void licenciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.apache.org/licenses/LICENSE-2.0.html");
         }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (textBox1.Text != "")
@@ -237,6 +263,7 @@ namespace Sobreloader
                 desText.Visible = false;
             }
         }
+
         private void sobreloader_SizeChanged(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Maximized)
@@ -244,7 +271,7 @@ namespace Sobreloader
                 restaurarVentanaToolStripMenuItem.Enabled = false;
 
             }
-            else if (this.Size.Width != 450 || this.Size.Height != 389)
+            else if (this.Size.Width != 450 || this.Size.Height != 356)
             {
                 restaurarVentanaToolStripMenuItem.Enabled = true;
             }
@@ -253,6 +280,7 @@ namespace Sobreloader
                 restaurarVentanaToolStripMenuItem.Enabled = false;
             }
         }
+
         private void cancText_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
@@ -267,7 +295,6 @@ namespace Sobreloader
             textBox1.Text = ultexto;
         }
 
-
         private void historialDeProcesosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             historial historialw = new historial(prgsList);
@@ -281,7 +308,7 @@ namespace Sobreloader
 
         private void restaurarVentanaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(450, 389);
+            this.Size = new Size(450, 356);
             restaurarVentanaToolStripMenuItem.Enabled = false;
         }
 
@@ -296,6 +323,20 @@ namespace Sobreloader
             {
                 this.TopMost = false;
                 siempreVisibleToolStripMenuItem.Checked = false;
+            }
+        }
+
+        private void activarDepuraciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!SC.debug)
+            {
+                SC.debug = true;
+                activarDepuraciónToolStripMenuItem.Checked = true;
+            }
+            else
+            {
+                SC.debug = false;
+                activarDepuraciónToolStripMenuItem.Checked = false;
             }
         }
     }

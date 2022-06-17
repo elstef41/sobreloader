@@ -155,9 +155,7 @@
 </value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>A simple overloader program for Microsoft Windows.
-
-Sorry for my bad english, I'm Uruguayan!</value>
+    <value>A simple program overloader for Microsoft Windows.</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>&amp;Close</value>
@@ -4368,5 +4366,8 @@ Sorry for my bad english, I'm Uruguayan!</value>
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 </value>
+  </data>
+  <data name="ver" xml:space="preserve">
+    <value>Version </value>
   </data>
 </root>

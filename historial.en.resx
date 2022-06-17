@@ -124,7 +124,7 @@
     <value>&amp;Reload</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
-    <value>&amp;Copy name</value>
+    <value>&amp;Copy</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>These will be deleted when closing the program.</value>

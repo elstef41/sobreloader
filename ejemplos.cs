@@ -12,6 +12,7 @@ namespace Sobreloader
 {
     public partial class ejemplos : Form
     {
+        Strings SC = new Strings();
         ResourceManager rm = new ResourceManager(typeof(ejemplos));
         public ejemplos()
         {
@@ -78,7 +79,6 @@ namespace Sobreloader
                     break;
 
             }
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -98,8 +98,15 @@ namespace Sobreloader
             }
             catch (SystemException err)
             {
-                MessageBox.Show("Ha ocurrido un error al abrir el archivo. Comprueba que es compatible con tu versión de Windows.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                if (SC.debug)
+                {
+                    MessageBox.Show(string.Format(rm.GetString("msgErrorOF")) + "\n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(string.Format(rm.GetString("msgErrorOF")), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+           }
         }
     }
 }

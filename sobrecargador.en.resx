@@ -122,7 +122,7 @@
     <value>224, 13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Write the path of executable/name of process</value>
+    <value>Type the full path of executable/name of process</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>E.g: mspaint</value>
@@ -131,7 +131,7 @@
     <value>157, 13</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Write the number of times to run</value>
+    <value>Type the number of times to run</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>&amp;Run</value>
@@ -365,6 +365,12 @@
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 6</value>
   </data>
+  <data name="activarDepuraciónToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 22</value>
+  </data>
+  <data name="activarDepuraciónToolStripMenuItem.Text" xml:space="preserve">
+    <value>E&amp;nable depuration</value>
+  </data>
   <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 22</value>
   </data>
@@ -427,6 +433,45 @@
   </data>
   <data name="ayudaToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Help</value>
+  </data>
+  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 19</value>
+  </data>
+  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 17</value>
+  </data>
+  <data name="radioButton1.Text" xml:space="preserve">
+    <value>&amp;Default</value>
+  </data>
+  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 40</value>
+  </data>
+  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 17</value>
+  </data>
+  <data name="radioButton2.Text" xml:space="preserve">
+    <value>&amp;Minimized</value>
+  </data>
+  <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 60</value>
+  </data>
+  <data name="radioButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 17</value>
+  </data>
+  <data name="radioButton3.Text" xml:space="preserve">
+    <value>Ma&amp;ximized</value>
+  </data>
+  <data name="radioButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 79</value>
+  </data>
+  <data name="radioButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 17</value>
+  </data>
+  <data name="radioButton4.Text" xml:space="preserve">
+    <value>H&amp;idden</value>
+  </data>
+  <data name="estadoVentana.Text" xml:space="preserve">
+    <value>Window status</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4630,19 +4675,18 @@
 </value>
   </data>
   <data name="msgErrorOF" xml:space="preserve">
-    <value>There was an error opening the file.
+    <value>There was an error opening the executable.
 
-If you wrote the executable name full stop, try to put the entire path.</value>
+If you wrote his name full stop, try to put the entire path.</value>
   </data>
   <data name="msgErrorOpen" xml:space="preserve">
-    <value>There was an error opening the file.</value>
+    <value>There was an error opening the executable.</value>
   </data>
   <data name="msgErrorSE" xml:space="preserve">
-    <value>Please, select a file.</value>
+    <value>Please, select an executable.</value>
   </data>
   <data name="msgNoLimit" xml:space="preserve">
     <value>You selected "No limit" option, which it involves that the established program will be executed constantly. If you aren't in a virtual environment it is very probable that this procedure causes damage to your computer, dropping consequences.
-
 
 Are you sure to continue? If you are not in a virtual machine, select No.</value>
   </data>
@@ -4676,5 +4720,8 @@ The program author is not responsible for the effects that may entail by the exe
   </data>
   <data name="textOFD1" xml:space="preserve">
     <value>Select an executable...</value>
+  </data>
+  <data name="msgWarn" xml:space="preserve">
+    <value>Warning</value>
   </data>
 </root>

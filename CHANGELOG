@@ -1,3 +1,8 @@
+1.0.0:
+Primera versión estable
+- Posiblidad de iniciar el ejecutable minimizado, oculto o maximizado.
+- Modo de depuración: muestra más detalles en varias ventanas de error.
+
 0.9.6:
 - Opción para cerrar Sobreloader al terminar de abrir los procesos.
 - Actualizado enlace de blog.
@@ -22,4 +27,4 @@
 - Cambios estéticos menores.
 
 0.8.0:
-- Lanzamiento inicial
+Lanzamiento inicial

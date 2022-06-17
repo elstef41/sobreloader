@@ -130,13 +130,13 @@
     <value>12, 61</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 13</value>
+    <value>252, 13</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Escribe la ruta del ejecutable/el nombre del proceso:</value>
+    <value>Escribe la ruta del ejecutable/el nombre del proceso</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -156,11 +156,14 @@
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
+  <data name="label3.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 81</value>
+    <value>234, 79</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 11</value>
+    <value>89, 15</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -187,10 +190,10 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 77</value>
+    <value>18, 79</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 20</value>
+    <value>286, 13</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -286,10 +289,10 @@
     <value>Left, Right</value>
   </data>
   <data name="argsTB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 61</value>
+    <value>16, 72</value>
   </data>
   <data name="argsTB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 20</value>
+    <value>227, 20</value>
   </data>
   <data name="argsTB.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -316,7 +319,7 @@
     <value>True</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 43</value>
+    <value>16, 49</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 17</value>
@@ -426,6 +429,42 @@
   <data name="oAdicionales.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
   </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>oAdicionales</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oAdicionales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 203</value>
+  </data>
+  <data name="oAdicionales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 107</value>
+  </data>
+  <data name="oAdicionales.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="oAdicionales.Text" xml:space="preserve">
+    <value>Opciones adicionales</value>
+  </data>
+  <data name="&gt;&gt;oAdicionales.Name" xml:space="preserve">
+    <value>oAdicionales</value>
+  </data>
+  <data name="&gt;&gt;oAdicionales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oAdicionales.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;oAdicionales.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="checkBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
@@ -436,7 +475,7 @@
     <value>NoControl</value>
   </data>
   <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 22</value>
+    <value>16, 26</value>
   </data>
   <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 17</value>
@@ -458,30 +497,6 @@
   </data>
   <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="oAdicionales.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 257</value>
-  </data>
-  <data name="oAdicionales.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 93</value>
-  </data>
-  <data name="oAdicionales.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="oAdicionales.Text" xml:space="preserve">
-    <value>Opciones adicionales</value>
-  </data>
-  <data name="&gt;&gt;oAdicionales.Name" xml:space="preserve">
-    <value>oAdicionales</value>
-  </data>
-  <data name="&gt;&gt;oAdicionales.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;oAdicionales.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;oAdicionales.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="cancText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -638,11 +653,14 @@
         qA8UAvFi5cMwPl9qd3iWaPBOxKAQH4bxQFiiR4vtI5L8DyRgeJ474ZAQAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="desText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="desText.Location" type="System.Drawing.Point, System.Drawing">
     <value>310, 80</value>
   </data>
   <data name="desText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 11</value>
+    <value>16, 12</value>
   </data>
   <data name="desText.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -728,10 +746,10 @@
 </value>
   </data>
   <data name="ctst.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 81</value>
+    <value>326, 81</value>
   </data>
   <data name="ctst.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 11</value>
+    <value>15, 11</value>
   </data>
   <data name="ctst.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -754,105 +772,6 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="nombresDeEjemploToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+E</value>
-  </data>
-  <data name="nombresDeEjemploToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 22</value>
-  </data>
-  <data name="nombresDeEjemploToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Nombres de procesos de ejemplo</value>
-  </data>
-  <data name="historialDeProcesosToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+H</value>
-  </data>
-  <data name="historialDeProcesosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 22</value>
-  </data>
-  <data name="historialDeProcesosToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Historial de procesos</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 6</value>
-  </data>
-  <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 22</value>
-  </data>
-  <data name="salirToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Salir</value>
-  </data>
-  <data name="SobreloaderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
-  </data>
-  <data name="SobreloaderToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Proceso</value>
-  </data>
-  <data name="restaurarVentanaToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="restaurarVentanaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
-  </data>
-  <data name="restaurarVentanaToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Restaurar tamaño</value>
-  </data>
-  <data name="siempreVisibleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
-  </data>
-  <data name="siempreVisibleToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Siempre visible</value>
-  </data>
-  <data name="ventanaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
-  </data>
-  <data name="ventanaToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Ventana</value>
-  </data>
-  <data name="advertenciaDeInicioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="advertenciaDeInicioToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Advertencia de inicio</value>
-  </data>
-  <data name="visitarRepositorioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="visitarRepositorioToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Visitar repositorio</value>
-  </data>
-  <data name="licenciaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="licenciaToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Licencia</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 6</value>
-  </data>
-  <data name="acercaDeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="acercaDeToolStripMenuItem.Text" xml:space="preserve">
-    <value>A&amp;cerca de Sobreloader</value>
-  </data>
-  <data name="ayudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 20</value>
-  </data>
-  <data name="ayudaToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Ayuda</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 24</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
   <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
@@ -889,6 +808,306 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 24</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SobreloaderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="SobreloaderToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Proceso</value>
+  </data>
+  <data name="nombresDeEjemploToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+E</value>
+  </data>
+  <data name="nombresDeEjemploToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="nombresDeEjemploToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Nombres de procesos de ejemplo</value>
+  </data>
+  <data name="historialDeProcesosToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+H</value>
+  </data>
+  <data name="historialDeProcesosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="historialDeProcesosToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Historial de procesos</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 6</value>
+  </data>
+  <data name="activarDepuraciónToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="activarDepuraciónToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Activar depuración</value>
+  </data>
+  <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="salirToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Salir</value>
+  </data>
+  <data name="ventanaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="ventanaToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Ventana</value>
+  </data>
+  <data name="restaurarVentanaToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="restaurarVentanaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="restaurarVentanaToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Restaurar tamaño</value>
+  </data>
+  <data name="siempreVisibleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="siempreVisibleToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Siempre visible</value>
+  </data>
+  <data name="ayudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="ayudaToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Ayuda</value>
+  </data>
+  <data name="advertenciaDeInicioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="advertenciaDeInicioToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Advertencia de inicio</value>
+  </data>
+  <data name="visitarRepositorioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="visitarRepositorioToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Visitar repositorio</value>
+  </data>
+  <data name="licenciaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="licenciaToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Licencia</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 6</value>
+  </data>
+  <data name="acercaDeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="acercaDeToolStripMenuItem.Text" xml:space="preserve">
+    <value>A&amp;cerca de Sobreloader</value>
+  </data>
+  <data name="radioButton1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="radioButton1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 19</value>
+  </data>
+  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="radioButton1.Text" xml:space="preserve">
+    <value>P&amp;or defecto</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
+    <value>radioButton1</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
+    <value>estadoVentana</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="radioButton2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 38</value>
+  </data>
+  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="radioButton2.Text" xml:space="preserve">
+    <value>&amp;Minimizado</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
+    <value>radioButton2</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
+    <value>estadoVentana</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButton3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="radioButton3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 58</value>
+  </data>
+  <data name="radioButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="radioButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="radioButton3.Text" xml:space="preserve">
+    <value>Ma&amp;ximizado</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.Name" xml:space="preserve">
+    <value>radioButton3</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.Parent" xml:space="preserve">
+    <value>estadoVentana</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButton4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="radioButton4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 79</value>
+  </data>
+  <data name="radioButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="radioButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="radioButton4.Text" xml:space="preserve">
+    <value>&amp;Oculto</value>
+  </data>
+  <data name="&gt;&gt;radioButton4.Name" xml:space="preserve">
+    <value>radioButton4</value>
+  </data>
+  <data name="&gt;&gt;radioButton4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton4.Parent" xml:space="preserve">
+    <value>estadoVentana</value>
+  </data>
+  <data name="&gt;&gt;radioButton4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="estadoVentana.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="estadoVentana.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 203</value>
+  </data>
+  <data name="estadoVentana.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 107</value>
+  </data>
+  <data name="estadoVentana.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="estadoVentana.Text" xml:space="preserve">
+    <value>Estado de la ventana</value>
+  </data>
+  <data name="&gt;&gt;estadoVentana.Name" xml:space="preserve">
+    <value>estadoVentana</value>
+  </data>
+  <data name="&gt;&gt;estadoVentana.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;estadoVentana.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;estadoVentana.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="panel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 76</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>331, 19</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -896,7 +1115,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>434, 350</value>
+    <value>434, 317</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5125,6 +5344,12 @@
   </data>
   <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;activarDepuraciónToolStripMenuItem.Name" xml:space="preserve">
+    <value>activarDepuraciónToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;activarDepuraciónToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;salirToolStripMenuItem.Name" xml:space="preserve">
     <value>salirToolStripMenuItem</value>

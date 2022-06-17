@@ -51,6 +51,7 @@
             this.nombresDeEjemploToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historialDeProcesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.activarDepuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restaurarVentanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,6 +62,12 @@
             this.licenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.estadoVentana = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.oAdicionales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cancText)).BeginInit();
@@ -68,6 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ctst)).BeginInit();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.estadoVentana.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -85,6 +93,7 @@
             // textBox1
             // 
             resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Name = "textBox1";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -199,6 +208,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SobreloaderToolStripMenuItem,
             this.ventanaToolStripMenuItem,
@@ -212,6 +222,7 @@
             this.nombresDeEjemploToolStripMenuItem,
             this.historialDeProcesosToolStripMenuItem,
             this.toolStripSeparator2,
+            this.activarDepuraciónToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.SobreloaderToolStripMenuItem.Name = "SobreloaderToolStripMenuItem";
             resources.ApplyResources(this.SobreloaderToolStripMenuItem, "SobreloaderToolStripMenuItem");
@@ -232,6 +243,12 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            // 
+            // activarDepuraciónToolStripMenuItem
+            // 
+            this.activarDepuraciónToolStripMenuItem.Name = "activarDepuraciónToolStripMenuItem";
+            resources.ApplyResources(this.activarDepuraciónToolStripMenuItem, "activarDepuraciónToolStripMenuItem");
+            this.activarDepuraciónToolStripMenuItem.Click += new System.EventHandler(this.activarDepuraciónToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -299,6 +316,49 @@
             resources.ApplyResources(this.acercaDeToolStripMenuItem, "acercaDeToolStripMenuItem");
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
+            // radioButton1
+            // 
+            resources.ApplyResources(this.radioButton1, "radioButton1");
+            this.radioButton1.Checked = true;
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.TabStop = true;
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            resources.ApplyResources(this.radioButton2, "radioButton2");
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            resources.ApplyResources(this.radioButton3, "radioButton3");
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            resources.ApplyResources(this.radioButton4, "radioButton4");
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // estadoVentana
+            // 
+            resources.ApplyResources(this.estadoVentana, "estadoVentana");
+            this.estadoVentana.Controls.Add(this.radioButton4);
+            this.estadoVentana.Controls.Add(this.radioButton2);
+            this.estadoVentana.Controls.Add(this.radioButton3);
+            this.estadoVentana.Controls.Add(this.radioButton1);
+            this.estadoVentana.Name = "estadoVentana";
+            this.estadoVentana.TabStop = false;
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Name = "panel2";
+            // 
             // sobreloader
             // 
             resources.ApplyResources(this, "$this");
@@ -317,6 +377,8 @@
             this.Controls.Add(this.ctst);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.estadoVentana);
+            this.Controls.Add(this.panel2);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "sobreloader";
             this.SizeChanged += new System.EventHandler(this.sobreloader_SizeChanged);
@@ -330,6 +392,8 @@
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.estadoVentana.ResumeLayout(false);
+            this.estadoVentana.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,5 +433,12 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.ToolStripMenuItem activarDepuraciónToolStripMenuItem;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.GroupBox estadoVentana;
+        private System.Windows.Forms.Panel panel2;
     }
 }
