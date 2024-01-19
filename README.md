@@ -16,14 +16,14 @@ Sobreloader permite abrir un programa una x cantidad de veces al mismo tiempo, d
 - Ver un historial de ejecuciones con su cantidad.
 - Seleccionar el estado de las ventanas: maximizada, minimizada, oculta o normal.
 
-### Requisitos:
-...para ejecutar Sobreloader:
+## Requisitos:
+
+### Para ejecutar Sobreloader
 * Windows XP o superior.
 * .NET Framework 2 o superior.
 
-...para compilar:
-* Visual Studio 2010 o superior (por retrocompatibilidad se recomienda la más cercana a 2010).
-
+### Para compilar
+* Visual Studio 2010 o Visual C# 2010 Express. En versiones posteriores pueden surgir errores de compatibilidad.
 
 **La ejecución masiva de programas supone un riesgo para el rendimiento del sistema. Como ya se ha mencionado, su utilización es ampliamente recomendada en máquinas virtuales o equipos en desuso.**
 
